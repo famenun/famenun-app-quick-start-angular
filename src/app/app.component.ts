@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FAppApiService } from './f-app-api.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'famenun-app-quick-start-angular';
+  
+  toastMessage = '';
+
+  constructor(
+    public fAppApiService: FAppApiService
+  ) {
+    
+  }
+
+  showToast(): void {
+    this.fAppApiService.api.toastHandler.showToast(this.toastMessage)
+    .then(() => {
+      this.toastMessage = '';
+    });
+  }
+
 }

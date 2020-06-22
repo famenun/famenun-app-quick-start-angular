@@ -1,0 +1,8 @@
+{
+    "version": "1.0.0",
+    "id": "com.example.app",
+    "name": "Famenun App Quick Start Angular",
+    "icon": "./favicon.ico",
+    "entry": "./index.html",
+    "color": "#03a9f4"
+}

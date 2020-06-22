@@ -1,0 +1,16 @@
+.mother-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.content {
+    width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 90%;
+    }
+}
